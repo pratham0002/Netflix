@@ -1,0 +1,205 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: black;
+    font-family: NetflixRegular, sans-serif;
+  }
+
+  .homePage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url(./images/netflixBG.jpg) no-repeat center/cover;
+  }
+
+  .homePage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.034) 0%, rgba(0, 0, 0, 0.548) 40%);
+    z-index: 1;
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem;
+    align-items: center;
+  }
+
+  .logo {
+    height: 6rem;
+    width: 12rem;
+    background: url(./images/netflixicon.webp) no-repeat center/cover;
+  }
+
+
+  .or {
+    margin-top: 1rem;
+    color: rgb(174, 174, 174);
+    font-size: 1rem;
+    text-align: center !important;
+  }
+
+  #forgot {
+    color: rgb(174, 174, 174);
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+
+  #forgot:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    background-color: #E50914;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: NetflixBold, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 0;
+  }
+
+  .signincode {
+    background-color: #353434;
+  }
+
+  .btn a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .signin {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0.5rem;
+    max-width: 28rem;
+    text-align: center;
+  }
+
+  .signin h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: start;
+    margin-bottom: 1.5rem;
+    font-family: NetflixBold, sans-serif;
+  }
+
+  .signin input {
+    width: 100%;
+    padding: 1.3rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+  }
+
+  .signin input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .signin .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .helpOptions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .helpOptions input {
+    width: auto;
+    margin: 0;
+  }
+
+  .helpOptions p {
+    margin: 0;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .helpOptions label {
+    font-size: 1.1rem;
+    color: rgb(190, 190, 190);
+  }
+
+  .helpOptions input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .signin a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+  }
+
+  .signin a:hover {
+    text-decoration: underline;
+  }
+
+  .signin p {
+    margin-top: 2rem;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.7);
+
+  }
+
+  .signin p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #learnMore {
+    font-size: .8rem !important;
+  }
+
+  #learnMore a {
+    color: #0071EB !important;
+  }
+
+  .signin p a:hover {
+    text-decoration: underline;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 0 1rem;
+    }
+
+    .homePage {
+      height: auto;
+      padding: 0;
+    }
+
+    .signin {
+      width: 90%;
+    }
+  }

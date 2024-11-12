@@ -1,0 +1,392 @@
+  .navbar {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.943), rgba(0, 0, 0, 0));
+  }
+
+  .home {
+    padding: 0 0 5rem 0;
+  }
+
+  .homePage {
+    margin-top: 0;
+    background: url('./images/mediaCenter.png') no-repeat center/cover;
+    height: auto;
+  }
+
+  .homePage::before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.034) 0%, rgba(0, 0, 0, 0) 40%);
+
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+    width: 40%;
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.781);
+  }
+
+  .home div {
+    position: relative;
+  }
+
+  .search {
+    position: absolute;
+    left: 1rem;
+    top: .8rem;
+    height: 1rem;
+    width: 1rem;
+    background: url('./images/search.png') no-repeat center/cover;
+  }
+
+  .home div input {
+    width: 40vw;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    padding: .5rem .5rem .5rem 3rem;
+  }
+
+  #searchInput::placeholder {
+    font-size: .8rem;
+    color: rgb(198, 197, 197);
+  }
+
+
+  .mediaBox {
+    padding: 2rem;
+  }
+
+  .mediaBox h1 {
+    font-family: NetflixBold;
+    font-size: 1.5rem;
+    color: rgb(220, 220, 220);
+    margin-bottom: 2rem;
+  }
+
+  .btnsBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btnsBox svg {
+    height: 100%;
+    width: 1.3rem;
+    filter: brightness(0) invert(1);
+  }
+
+  .mediaBtn {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem .8rem;
+    border-radius: .5rem;
+    transition: .3s ease-in-out;
+    background: #4E4E4E;
+  }
+
+  .mediaBtn:hover {
+    background: rgb(73, 105, 228);
+  }
+
+  .mediaBtn span {
+    font-family: NetflixBold;
+    font-size: .8rem;
+    text-wrap: nowrap;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background: rgba(128, 128, 128, 0.591);
+    margin: 2rem 0;
+  }
+
+  .mediaImageBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+
+  .mediaImageBox div {
+    height: 27rem;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .mediaImageBox p {
+    font-size: 1rem;
+    font-family: NetflixRegular;
+    margin-left: .5rem;
+  }
+
+  .mediaImageBox div:hover {
+    transform: scale(1.01);
+  }
+
+  #mediaImage1 {
+    background: url(./images/media1.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage2 {
+    background: url(./images/media2.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage3 {
+    background: url(./images/media3.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage4 {
+    background: url(./images/media4.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage5 {
+    background: url(./images/media5.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage6 {
+    background: url(./images/media6.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage7 {
+    background: url(./images/media7.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage8 {
+    background: url(./images/media8.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage9 {
+    background: url(./images/media9.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage10 {
+    background: url(./images/media10.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage11 {
+    background: url(./images/media11.jpg) no-repeat center/cover;
+  }
+
+  #mediaImage12 {
+    background: url(./images/media12.jpg) no-repeat center/cover;
+  }
+
+
+
+  .latestNews {
+    padding: 2rem;
+    background: #232323;
+  }
+
+  .latestNews h1 {
+    font-family: NetflixBold;
+    font-size: 2rem;
+    color: rgb(220, 220, 220);
+    margin-bottom: 2rem;
+  }
+
+  .newsBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem
+  }
+
+  .verticalLine {
+    height: 23rem;
+    width: 1.5px;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.304);
+  }
+
+  .newsBox .newsImage {
+    width: 30rem;
+    background: red;
+    height: 20rem;
+    position: relative;
+  }
+
+  .newsBox .newsImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(5, 5, 5, 0.67) 44.01%, rgba(15, 15, 15, 0) 100%);
+    z-index: 1;
+
+  }
+
+
+  #newImage1 {
+    background: url(./images/news1.jpg) no-repeat center/cover;
+  }
+
+  #newImage2 {
+    background: url(./images/news2.jpg) no-repeat center/cover;
+  }
+
+  #newImage3 {
+    background: url(./images/news3.png) no-repeat center/cover;
+  }
+
+  .newsImage {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .newsImage p,
+  .newsImage h2,
+  .newsImage button {
+    position: relative;
+    z-index: 10;
+  }
+
+  .newsImage p {
+    color: rgb(218, 218, 218);
+    font-size: .8rem;
+    font-family: NetflixRegular;
+  }
+
+  .newsImage h2 {
+    font-size: 1.5rem;
+    font-family: NetflixBold;
+  }
+
+  .mediaBtn {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.495);
+    background: transparent !important;
+  }
+
+
+  .centerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .bottomBanner {
+    position: relative;
+    padding: 8rem;
+    background:
+      linear-gradient(270deg, #0F0F0F 15.47%, rgba(15, 15, 15, 0.731185) 49%, rgba(15, 15, 15, 0.34) 75.16%),
+      url(./images/bottomBG.png) no-repeat center/cover;
+    width: 100vw;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .bottomBanner h1 {
+    font-size: 2rem;
+    font-family: NetflixBold;
+    text-align: end;
+  }
+
+  .bottomBanner p {
+    font-size: 1rem;
+    color: rgb(229, 229, 229);
+    text-align: end;
+    font-family: NetflixRegular;
+  }
+
+
+
+
+  @media screen and (max-width: 1000px) {
+    .home h1 {
+      width: 80%;
+    }
+
+    .home div input {
+      width: 60vw;
+    }
+
+    .btnsBox {
+      overflow-x: scroll;
+    }
+
+    .mediaImageBox {
+      place-items: center;
+    }
+
+    .mediaImageBox div {
+      height: 40rem;
+      width: 90%;
+    }
+
+    .mediaImageBox {
+      grid-template-columns: 1fr 1fr;
+      gap: 0rem;
+
+    }
+
+    .latestNews h1 {
+      position: absolute;
+      z-index: 7;
+      top: 2rem;
+    }
+
+    .latestNews {
+      position: relative;
+      padding-top: 5rem;
+      overflow: scroll;
+    }
+
+    .newsBox {
+      width: 150vw;
+    }
+
+
+    .bottomBanner {
+      padding: 4rem;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+    .home h1 {
+      width: 90%;
+    }
+
+    .mediaImageBox {
+      grid-template-columns: 1fr 1fr;
+
+    }
+
+    .newsBox {
+      width: 230vw;
+    }
+
+
+    .home div input {
+      width: 80vw;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .mediaImageBox {
+      grid-template-columns: 1fr;
+    }
+  }

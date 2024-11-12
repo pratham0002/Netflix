@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./media.css">
+  <link rel="shortcut icon" href="./images/netflixNicon.webp" type="image/x-icon">
+  <title>Netflix Media Center</title>
+</head>
+
+
+<body>
+
+  <div class="homePage">
+    <div class="navbar">
+      <a href="./index.html">
+        <div class="logo"></div>
+      </a>
+      <div class="navItems">
+        <select class="dropDown">
+          <option>English</option>
+          <option>हिन्दी</option>
+        </select>
+        <a href="./signin.html"><button class="btn">Sign In</button></a>
+
+      </div>
+    </div>
+    <div class="home">
+      <h1>Discover stories and experiences to share with India.</h1>
+      <div>
+        <input id="searchInput" type="search" placeholder="Search for Netflix titles and news">
+        <span class="search"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="mediaBox">
+    <h1>I'm interested in covering titles releasing in October</h1>
+    <div class="btnsBox">
+      <div class="mediaBtn">
+        <svg viewBox="0 0 24 24" class="jss397 jss317 Hawkins-Icon Hawkins-Icon-Small">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <circle cx="8.95" cy="9" r="2"></circle>
+          <circle cx="8.95" cy="15" r="2"></circle>
+          <circle cx="11.95" cy="12" r="1"></circle>
+          <circle cx="14.95" cy="15" r="2"></circle>
+          <circle cx="14.95" cy="9" r="2"></circle>
+          <path d="M12 2a10 10 0 00-6 18H2v2h10a10 10 0 000-20zm0 18a8 8 0 118-8 8 8 0 01-8 8z"></path>
+        </svg>
+        <span>Film</span>
+
+      </div>
+      <div class="mediaBtn">
+        <svg viewBox="0 0 24 24" class="jss397 jss317 Hawkins-Icon Hawkins-Icon-Small">
+          <g>
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M19 6V4h-4V2H1v20h14v-2h4v-2h4V6zm-6 14H3V4h10zm4-2h-2V6h2zm4-2h-2V8h2z"></path>
+            <path d="M6 10v4l4-2-4-2z"></path>
+          </g>
+        </svg>
+        <span>Series</span>
+      </div>
+      <div class="mediaBtn">
+        <svg viewBox="0 0 24 24" class="jss397 jss317 Hawkins-Icon Hawkins-Icon-Small">
+          <path fill-rule="evenodd"
+            d="M3 3h18v18H3V3zm16 12V9H5v6h14zm0-8V5h-2v2h2zm-6-2h2v2h-2V5zM5 5v2h2V5H5zm6 2H9V5h2v2zm8 10v2h-2v-2h2zm-4 0h-2v2h2v-2zM5 19v-2h2v2H5zm4 0h2v-2H9v2z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <span>Documentary</span>
+      </div>
+      <div class="mediaBtn">
+        <svg viewBox="0 0 24 24" class="jss397 jss317 Hawkins-Icon Hawkins-Icon-Small">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path fill-rule="evenodd" d="M18 9V6H1v12h17v-2.95L23 17V7zm-2 7H3V8h13zm5-2l-3-1v-2l3-1z"></path>
+        </svg>
+        <span>Reality</span>
+      </div>
+      <div class="mediaBtn">
+        <svg viewBox="0 0 24 24" class="jss397 jss317 Hawkins-Icon Hawkins-Icon-Small">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path d="M18 12a6 6 0 01-12 0H4a8 8 0 007 7.93V22h2v-2.07A8 8 0 0020 12z"></path>
+          <path d="M12 16a4 4 0 004-4V6a4 4 0 00-8 0v6a4 4 0 004 4zM10 6a2 2 0 014 0v6a2 2 0 01-4 0z"></path>
+        </svg>
+        <span>Stand-Up Comedy</span>
+      </div>
+      <div class="mediaBtn">
+        <svg viewBox="0 0 24 24" class="jss397 jss317 Hawkins-Icon Hawkins-Icon-Small">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path
+            d="M23.71 16.29L22.32 5.83A3.28 3.28 0 0019.08 3H13V1h-2v2H4.92a3.28 3.28 0 00-3.24 2.83L.29 16.29A5 5 0 0010.23 18l.32-1.62h2.9l.32 1.62a5 5 0 009.94-1.66zM21 19a3 3 0 01-5.27-1.41l-.64-3.22H8.91l-.64 3.22a3 3 0 01-6-1L3.66 6.1A1.28 1.28 0 014.92 5h14.16a1.28 1.28 0 011.26 1.1l1.39 10.45A3 3 0 0121 19z">
+          </path>
+          <path d="M8 7H6v2H4v2h2v2h2v-2h2V9H8V7z"></path>
+          <circle cx="17" cy="8" r="1"></circle>
+          <circle cx="17" cy="12" r="1"></circle>
+          <circle cx="15" cy="10" r="1"></circle>
+          <circle cx="19" cy="10" r="1"></circle>
+        </svg>
+        <span>Game</span>
+      </div>
+
+
+    </div>
+
+
+    <div class="line"></div>
+
+
+    <div class="mediaImageBox">
+      <div class="mediaImage">
+        <div id="mediaImage1"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage2"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage3"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage4"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage5"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage6"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage7"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage8"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage9"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage10"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage11"></div>
+        <p>October 1, 2024</p>
+      </div>
+      <div class="mediaImage">
+        <div id="mediaImage12"></div>
+        <p>October 1, 2024</p>
+      </div>
+    </div>
+  </div>
+  <div class="centerBtn">
+    <button class="mediaBtn">Show 20 more in October</button>
+  </div>
+
+  <div class="latestNews">
+    <h1>Latest news</h1>
+    <div class="newsBox">
+      <div class="newsImage" id="newImage1">
+        <p>Global, Sweden</p>
+        <h2>Netflix Releases Trailer for The Helicopter Heist</h2>
+        <button class="mediaBtn">Read More</button>
+      </div>
+      <div class="verticalLine"></div>
+      <div class="newsImage" id="newImage2">
+        <p>Japan, Global</p>
+        <h2>Uncover the Secret Pulse of AI-Enhanced Tokyo: ‘Tokyo Override’ Premieres November 21</h2>
+        <button class="mediaBtn">Read More</button>
+      </div>
+      <div class="verticalLine"></div>
+      <div class="newsImage" id="newImage3">
+        <p>Spain, Global</p>
+        <h2>'900 Days Without Anabel': The Case That Became the Longest Kidnapping in the History of Spain Comes to
+          Netflix on November 22nd</h2>
+        <button class="mediaBtn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="centerBtn">
+    <button class="mediaBtn">Read more news in the Newsroom</button>
+  </div>
+
+  <div class="bottomBanner">
+    <h1>Looking for company assets?</h1>
+    <p>Get more images and information about Netflix on our company site.</p>
+    <button class="mediaBtn">Go to about Netflix</button>
+  </div>
+
+
+  <div class="footer">
+    <p>Questions? Call <a href="#">000-800-919-1694</a></p>
+    <div class="footerBox">
+      <div>
+        <a href="#faq">FAQ</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Privacy</a>
+        <a href="#">Speed Test</a>
+      </div>
+      <div>
+        <a href="#">
+          Help Centre</a>
+        <a href="#">
+          Jobs</a>
+        <a href="#">
+          Cookie Preferences</a>
+        <a href="#">
+          Legal Notices</a>
+      </div>
+      <div>
+        <a href="#">
+          Account</a>
+        <a href="#">
+          Ways to Watch</a>
+        <a href="#">
+          Corporate Information</a>
+        <a href="#">
+          Only on Netflix</a>
+      </div>
+      <div>
+        <a href="#">
+          Media Centre</a>
+        <a href="#">
+          Terms of Use</a>
+        <a href="#">
+          Contact Us</a>
+      </div>
+    </div>
+    <select class="dropDown">
+      <option> English</option>
+      <option>हिन्दी</option>
+    </select>
+    <h3>Netflix India</h3>
+  </div>
+
+
+</body>
+
+</html>
